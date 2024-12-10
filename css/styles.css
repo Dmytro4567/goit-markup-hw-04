@@ -80,12 +80,30 @@ img {
 }
 
 .navigation-item {
+    position: relative;
     display: block;
     font-weight: 500;
     line-height: 1.5;
     color: #2E2F42;
     letter-spacing: 0.02em;
     padding: 24px 0;
+}
+
+.navigation-item--current {
+    color: #404bbf;
+}
+
+.navigation-item--current::after {
+    position: absolute;
+    display: block;
+    bottom: -1px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+
+
 }
 
 .logo {
@@ -127,6 +145,13 @@ img {
 
 .hero {
     background-color: #2E2F42;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+    ), url("../images/people-office.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
@@ -184,6 +209,24 @@ img {
     margin-right: 0;
 }
 
+.solutions-list-item-icon-container {
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.solutions-list-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .solutions-list-item-header {
     color: #2E2F42;
     font-size: 20px;
@@ -221,11 +264,12 @@ img {
 .team-list-item {
     background-color: white;
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item-container {
-    padding: 32px 0
+    padding: 32px 16px
 }
 
 .team-list-item-header {
@@ -242,6 +286,26 @@ img {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.team-list-item-icons-container {
+    display: flex;
+    gap: 24px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+}
+
+.social-icon {
+    fill: white;
 }
 
 .portfolio-header {
@@ -293,6 +357,14 @@ img {
     padding-bottom: 100px;
 }
 
+.container-footer {
+    display: flex;
+}
+
+.footer-description {
+    margin-right: 120px;
+}
+
 .logo-footer {
     display: inline-block;
     font-family: Raleway, sans-serif;
@@ -315,6 +387,17 @@ img {
     letter-spacing: 0.02em;
     width: 264px;
 }
+
+.footer-social-header {
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-social-icons-container {
+    display: flex;
+    gap: 16px;
+}
+
 
 
 
