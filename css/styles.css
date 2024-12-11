@@ -154,6 +154,8 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    max-width: 1440px;
+    background-size: cover;
 }
 
 .hero-section {
