@@ -145,6 +145,7 @@ img {
 }
 
 .hero {
+    margin: 0 auto;
     background-color: #2E2F42;
     background-image: linear-gradient(
             to bottom,
